@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.jonathan.challenge1_part2_jonathan_sekula.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ghetto Photo Gallery"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:paddingBottom="20sp"
+        android:paddingTop="10sp"/>
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="260sp" />
+    <EditText
+        android:id="@+id/image_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:hint="Image ID"/>
+    <Button
+        android:id="@+id/button_view_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Picture"
+        android:onClick="ViewPicture"/>
+    <Button
+        android:id="@+id/button_take_picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="TakePicture"
+        android:text="Take Picture"/>
+
+</LinearLayout>
